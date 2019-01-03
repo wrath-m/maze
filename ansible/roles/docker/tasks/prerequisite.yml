@@ -1,0 +1,6 @@
+- name: Install Docker CE prerequisites
+  apt:
+    name: "{{ item }}"
+    state: latest
+    force: yes
+  with_items: "{{ prerequisites }}"

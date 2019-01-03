@@ -1,0 +1,40 @@
+- name: Add GPG key for the official Docker repo
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
+  tags: [docker]
+
+- name: Add Docker repo
+  apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
+    update_cache: yes
+    state: present
+  tags: [docker]
+
+- name: Install Docker-ce
+  apt:
+    name: docker-ce
+    state: installed
+    force: yes
+  tags: [docker]
+
+- name: Configure Docker
+  template:
+    src: "{{ docker_cfg_src }}"
+    dest: "{{ docker_cfg_dest }}"
+  register: config_result
+  tags: [docker]
+
+- name: Add vagrant user to the docker group
+  user:
+    name: "{{ user }}"
+    group: docker
+  register: user_result
+  tags: [docker]
+
+- name: Restart Docker
+  service:
+    name: docker
+    state: restarted
+  when: config_result|changed or user_result|changed
+  tags: [docker]

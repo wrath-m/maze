@@ -1,0 +1,8 @@
+--- #test ansible
+
+- hosts: 10.100.198.201
+  remote_user: vagrant
+  become: true
+  tasks:
+    - name: tgest
+      shell: touch /etc/caca

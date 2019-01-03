@@ -1,0 +1,6 @@
+--- # provision continous delivery server
+
+- hosts: localhost
+  remote_user: vagrant
+  roles:
+    - common

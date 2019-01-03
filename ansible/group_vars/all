@@ -1,0 +1,6 @@
+user: vagrant
+registry: 10.100.198.200:5000
+registry_mirror: http://10.100.198.200:5001
+registry_host_path: /vagrant/registry
+docker_cfg_src: docker.j2
+docker_cfg_dest: /etc/default/docker

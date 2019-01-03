@@ -1,0 +1,10 @@
+hosts: [
+  { host_ip: "10.100.198.200", host_name: "cd"},
+  { host_ip: "10.100.198.201", host_name: "node01"},
+  { host_ip: "10.100.198.202", host_name: "node02"},
+  { host_ip: "10.100.198.203", host_name: "node03"},
+  { host_ip: "10.100.198.204", host_name: "rp"},
+  { host_ip: "10.100.198.205", host_name: "monit"},
+  { host_ip: "10.100.198.206", host_name: "logger01"},
+  { host_ip: "10.100.198.207", host_name: "logger02"},
+]

@@ -1,0 +1,7 @@
+--- # provision servers with Docker
+
+- hosts: 10.100.198.201 
+  remote_user: vagrant
+  become: true
+  roles:
+    - docker 
