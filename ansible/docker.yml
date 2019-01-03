@@ -4,4 +4,5 @@
   remote_user: vagrant
   become: true
   roles:
-    - docker 
+    - docker
+    - docker-compose 
