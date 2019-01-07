@@ -4,7 +4,7 @@ RUN apt-get update && \
     apt-get install -y && \
     pip3 install uwsgi
 
-COPY /vagrant/project /opt/app
+COPY ./project_maze /opt/app
 
 RUN pip3 install -r /opt/app/requirements.txt
 
