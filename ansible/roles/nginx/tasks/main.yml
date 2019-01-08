@@ -1,0 +1,35 @@
+- name: Install Nginx
+  apt:
+    name: nginx
+    state: installed
+  tags: [nginx]
+
+- name: Allow access through ufw to Nginx
+  ufw:
+    rule: allow
+    name: Nginx HTTP
+  tags: [nginx]
+
+- name: Configure Nginx
+  template:
+    src: "{{ src_nginx_cfg }}"
+    dest: "{{ dest_nginx_cfg }}"
+  register: config_result
+  tags: [nginx]
+
+- name: Create symbolic link
+  file:
+    src: "{{ dest_nginx_cfg }}"
+    dest: "{{ sites_enabled_nginx }}"
+    state: link
+  tags: [nginx]
+
+- name: Restart Nginx
+  service:
+    name: nginx
+    state: restarted
+  when: config_result|changed
+  tags: [nginx]
+
+# Configure SSL
+# Check service

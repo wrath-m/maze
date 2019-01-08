@@ -1,0 +1,16 @@
+src_nginx_cfg: /vagrant/ansible/roles/nginx/templates/maze.j2
+dest_nginx_cfg: /etc/nginx/sites-available/maze
+sites_enabled_nginx: /etc/nginx/sites-enabled/maze
+upstream_server_ip: 127.0.0.1
+upstream_server_port: 8000
+server_listen_port: 80
+server_listen_default_tag: default_server
+server_server_name: maze.com
+server_location_allow: all
+server_location_proxy_http_version: 1.1
+server_location_proxy_set_header_1: X-Forwarded-For $proxy_add_x_forwarded_for
+server_location_proxy_set_header_2: Host $http_host
+server_location_proxy_set_header_3: X-Cluster-Client-Ip $remote_addr
+server_location_proxy_pass: http://app
+
+

@@ -1,0 +1,17 @@
+upstream app {
+    server {{ upstream_server_ip }}:{{ upstream_server_port }};
+}
+
+server {
+    listen {{ server_listen_port }} {{ server_listen_default_tag }};
+    server_name {{ server_server_name }};
+
+    location / {
+        allow {{ server_location_allow }};
+        proxy_http_version {{ server_location_proxy_http_version }};
+        proxy_set_header {{ server_location_proxy_set_header_1 }};
+        proxy_set_header {{ server_location_proxy_set_header_2 }};
+        proxy_set_header {{ server_location_proxy_set_header_3 }};
+        proxy_pass {{ server_location_proxy_pass }};
+    }
+}

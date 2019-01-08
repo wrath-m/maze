@@ -1,0 +1,8 @@
+--- # provision servers with Nginx
+
+- hosts: 10.100.198.201
+  remote_user: vagrant
+  become: true
+  roles:
+    - nginx
+
