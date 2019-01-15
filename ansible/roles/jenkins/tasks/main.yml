@@ -1,0 +1,20 @@
+- name: Add GPG key for the Jenkins repo
+  apt_key:
+    url: https://pkg.jenkins.io/debian/jenkins-ci.org.key
+    state: present
+  tags: [jenkins]
+
+- name: Add Jenkins repo
+  apt_repository:
+    repo: deb http://pkg.jenkins.io/debian-stable binary/
+    filename: jenkins
+    update_cache: yes
+    state: present
+  tags: [jenkins]
+
+- name: Install Jenkins
+  apt:
+    name: jenkins
+    state: installed
+    force: yes
+  tags: [jenkins]

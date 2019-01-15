@@ -1,0 +1,7 @@
+--- # Install Jenkins on cd node
+
+- hosts: cd
+  remote_user: vagrant
+  become: true
+  roles:
+    - jenkins
