@@ -1,0 +1,7 @@
+--- # Deploy Consul
+
+- hosts: app
+  remote_user: vagrant
+  become: true
+  roles:
+    - consul

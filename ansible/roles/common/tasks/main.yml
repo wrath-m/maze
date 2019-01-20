@@ -5,3 +5,9 @@
   with_items: "{{ hosts }}"
   tags: [common]
 
+- name: Install zip
+  apt:
+    name: zip
+    state: installed
+    update_cache: yes
+  tags: [common]
