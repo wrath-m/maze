@@ -16,6 +16,7 @@
     name: docker-ce
     state: installed
     force: yes
+    update_cache: yes
   tags: [docker]
 
 - name: Configure Docker
