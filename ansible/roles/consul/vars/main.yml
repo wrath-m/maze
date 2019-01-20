@@ -1,8 +1,5 @@
 logs_dir: /var/log/consul
 
-directories:
-  - /data/consul/data
-  - /data/consul/config
-  - "{{ logs_dir }}"
+directories: [/data/consul/data, /data/consul/config, "{{ logs_dir }}"]
 
 consul_version: 1.4.0
