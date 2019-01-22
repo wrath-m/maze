@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
 
 	config.vm.define "node01" do |d|
   	d.vm.box = "ubuntu/bionic64"
-  	d.vm.hostname = "node-01"
+  	d.vm.hostname = "node01"
   	d.vm.network "private_network", ip: "10.100.198.201"
 #   d.vm.provision :shell, path: "scripts/bootstrap_ansible.sh"
    	d.vm.provision :shell, path: "scripts/bootstrap.sh"
@@ -32,7 +32,7 @@ Vagrant.configure("2") do |config|
 
 	config.vm.define "node02" do |d|
   	d.vm.box = "ubuntu/bionic64"
-  	d.vm.hostname = "node2"
+  	d.vm.hostname = "node02"
   	d.vm.network "private_network", ip: "10.100.198.202"
 #   d.vm.provision :shell, path: "scripts/bootstrap_ansible.sh"
    	d.vm.provision :shell, path: "scripts/bootstrap.sh"
