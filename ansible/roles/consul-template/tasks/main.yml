@@ -1,0 +1,19 @@
+- name: Create directory structure
+  file:
+    path: /data/consul-template 
+    state: directory
+  tags: [consul-template]
+
+- name: Download pkg
+  get_url:
+    url: https://releases.hashicorp.com/consul-template/{{ consul_version }}/consul-template_{{ consul_version }}_linux_amd64.zip
+    dest: /tmp/consul-template_{{ consul_version }}_linux_amd64.zip
+  tags: [consul-template]
+
+- name: Unzip binary and copy to path
+  unarchive:
+     src: /tmp/consul-template_{{ consul_version }}_linux_amd64.zip
+     dest: /usr/local/bin/
+     mode: 0755
+     remote_src: yes
+  tags: [consul-template]
