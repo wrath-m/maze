@@ -1,0 +1,7 @@
+--- # Deploy Registrator
+
+- hosts: app
+  remote_user: vagrant
+  become: true
+  roles:
+    - registrator

@@ -1,0 +1,4 @@
+registrator_protocol: consul
+port: 8500
+registrator_name: registrator-consul
+

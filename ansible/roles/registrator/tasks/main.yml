@@ -1,0 +1,15 @@
+- name: Install Python Docker Module
+  pip:
+    name: docker
+  tags: [registrator]
+
+- name: Run Registrator container
+  docker_container:
+    name: "{{ registrator_name }}"
+    image: gliderlabs/registrator
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock
+    hostname: "{{ ansible_hostname }}"
+    command: -ip "{{ consul_ip }}" "{{ registrator_protocol }}"://{{ consul_ip }}:{{ port }}
+    state: started
+  tags: [registrator]
