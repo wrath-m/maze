@@ -1,0 +1,5 @@
+upstream app {
+	{{range service "temporary_docker_images_web" "any"}}
+	server {{.Address}}:{{.Port}};
+	{{end}}
+}

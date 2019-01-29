@@ -10,6 +10,25 @@
     name: Nginx HTTP
   tags: [nginx]
 
+- name: Create folder for upstream Consul templates
+  file:
+    path: /etc/nginx/upstreams
+    state: directory
+  tags: [nginx]
+
+- name: Copy upstreams
+  copy:
+    src: /vagrant/ansible/roles/nginx/files/maze.ctmpl
+    dest: /etc/nginx/upstreams
+    owner: root
+    group: root
+    mode: 0644
+  tags: [nginx]
+
+- name: Run Consul template on upstream
+  shell: consul-template -template /etc/nginx/upstreams/maze.ctmpl:/etc/nginx/upstreams/maze.conf -once
+  tags: [nginx]
+
 - name: Configure Nginx
   template:
     src: "{{ src_nginx_cfg }}"

@@ -1,6 +1,4 @@
-upstream app {
-    server {{ upstream_server_ip }}:{{ upstream_server_port }};
-}
+include /etc/nginx/upstreams/maze.conf;
 
 server {
     listen {{ server_listen_port }} {{ server_listen_default_tag }};
