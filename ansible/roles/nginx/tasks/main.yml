@@ -23,10 +23,11 @@
     owner: root
     group: root
     mode: 0644
+  register: copy_result
   tags: [nginx]
 
 - name: Run Consul template on upstream
-  shell: consul-template -template /etc/nginx/upstreams/maze.ctmpl:/etc/nginx/upstreams/maze.conf -once
+  shell: nohup consul-template -template "/etc/nginx/upstreams/maze.ctmpl:/etc/nginx/upstreams/maze.conf:systemctl reload nginx" -once &
   tags: [nginx]
 
 - name: Configure Nginx
@@ -52,7 +53,7 @@
   service:
     name: nginx
     state: restarted
-  when: config_result|changed
+  when: config_result|changed or copy_result|changed
   tags: [nginx]
 
 # Configure SSL
