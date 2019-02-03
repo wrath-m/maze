@@ -1,0 +1,11 @@
+--- # provision servers with Nginx
+
+- hosts: reverseproxy
+  remote_user: vagrant
+  become: true
+  roles:
+    - common
+    - consul
+    - consul-template
+    - nginx
+

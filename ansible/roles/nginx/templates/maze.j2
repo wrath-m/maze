@@ -11,5 +11,6 @@ server {
         proxy_set_header {{ server_location_proxy_set_header_2 }};
         proxy_set_header {{ server_location_proxy_set_header_3 }};
         proxy_pass {{ server_location_proxy_pass }};
+	proxy_next_upstream error timeout invalid_header http_500;
     }
 }
