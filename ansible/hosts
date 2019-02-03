@@ -7,7 +7,7 @@
 10.100.198.200
 
 [reverseproxy]
-10.100.198.204
+10.100.198.204 consul_extra="" consul_server_ip="10.100.198.201" consul_ip="10.100.198.204"
 
 [monitoring]
 10.100.198.205
