@@ -27,7 +27,7 @@
   tags: [nginx]
 
 - name: Run Consul template on upstream
-  shell: nohup consul-template -template "/etc/nginx/upstreams/maze.ctmpl:/etc/nginx/upstreams/maze.conf:systemctl reload nginx" -once &
+  shell: nohup consul-template -template "/etc/nginx/upstreams/maze.ctmpl:/etc/nginx/upstreams/maze.conf:/bin/bash -c 'systemctl reload nginx || true'" &
   tags: [nginx]
 
 - name: Configure Nginx
