@@ -1,0 +1,9 @@
+# put tests here
+
+- name: Check if application is responding properly
+  uri:
+    url: http://10.100.198.204/app_maze/
+    return_content: yes
+  register: caca
+  failed_when: "'maze' not in caca.content"
+    

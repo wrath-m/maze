@@ -1,6 +1,6 @@
 --- # provision continous delivery server
 
-- hosts: app 
+- hosts: cd 
   remote_user: vagrant
   roles:
     - common

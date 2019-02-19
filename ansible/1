@@ -1,0 +1,7 @@
+--- # provision application
+
+- hosts: app
+  remote_user: vagrant
+  become: true
+  roles:
+    - service

@@ -1,0 +1,12 @@
+--- # provision prod application servers
+
+- hosts: app
+  remote_user: vagrant
+  become: true
+  roles:
+    - common
+    - docker
+    - docker-compose
+    - consul
+    - consul-template
+    - registrator 

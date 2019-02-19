@@ -1,0 +1,261 @@
+Job for nginx.service failed because the control process exited with error code.
+See "systemctl status nginx.service" and "journalctl -xe" for details.
+2019/02/03 10:49:56.817264 [ERR] (cli) 1 error occurred:
+
+* failed to execute command "systemctl reload nginx" from "/etc/nginx/upstreams/maze.ctmpl" => "/etc/nginx/upstreams/maze.conf": child: command exited with a non-zero exit status:
+
+    systemctl reload nginx
+
+This is assumed to be a failure. Please ensure the command
+exits with a zero exit status.
+Job for nginx.service failed because the control process exited with error code.
+See "systemctl status nginx.service" and "journalctl -xe" for details.
+2019/02/03 11:01:22.086243 [ERR] (cli) 1 error occurred:
+
+* failed to execute command "systemctl reload nginx" from "/etc/nginx/upstreams/maze.ctmpl" => "/etc/nginx/upstreams/maze.conf": child: command exited with a non-zero exit status:
+
+    systemctl reload nginx
+
+This is assumed to be a failure. Please ensure the command
+exits with a zero exit status.
+Job for nginx.service failed because the control process exited with error code.
+See "systemctl status nginx.service" and "journalctl -xe" for details.
+2019/02/03 11:14:28.405215 [ERR] (cli) 1 error occurred:
+
+* failed to execute command "systemctl reload nginx || true" from "/etc/nginx/upstreams/maze.ctmpl" => "/etc/nginx/upstreams/maze.conf": child: command exited with a non-zero exit status:
+
+    systemctl reload nginx
+
+This is assumed to be a failure. Please ensure the command
+exits with a zero exit status.
+2019/02/03 11:16:22.669056 [ERR] (cli) 1 error occurred:
+
+* failed to execute command "'systemctl reload nginx || true'" from "/etc/nginx/upstreams/maze.ctmpl" => "/etc/nginx/upstreams/maze.conf": child: exec: "systemctl reload nginx || true": executable file not found in $PATH
+Job for nginx.service failed because the control process exited with error code.
+See "systemctl status nginx.service" and "journalctl -xe" for details.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.
+nginx.service is not active, cannot reload.

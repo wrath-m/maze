@@ -1,0 +1,4 @@
+- name: Start application containers
+  shell: docker-compose up -d
+  args:
+    chdir: /vagrant/temporary_docker_images/
